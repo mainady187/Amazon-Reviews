@@ -34,6 +34,8 @@ The system transitions from an experimental Research & Development phase into a 
         ┌──────────────────────────────────┐
         │ Streamlit Web Dashboard Metrics  │
         └──────────────────────────────────┘
+
+```
  Core Engineering Features:
 Hybrid Query Router: When a user enters an Amazon URL, the system immediately checks the local pre-processed data warehouse (cleaned_amazon_reviews.csv). If matched, verified reviews are loaded instantly, bypassing network latency.
 

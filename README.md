@@ -41,6 +41,21 @@ Defensive Web Scraper: If the product is missing from the database, an automated
 
 Optimized Feature Layer: Re-engineered text vectorization using TfidfVectorizer capped at 3,000 max features with ngram_range=(1, 2) to capture contextual phrase pairs (e.g., "not good").
 
+
+Dataset & Setup
+The project is built and validated using the Amazon Echo Dot 2 reviews dataset. To optimize repository size, the raw data file is hosted externally.
+
+Dataset Source: Amazon Echo Dot 2 Reviews Dataset (Kaggle)
+https://www.kaggle.com/datasets/PromptCloudHQ/amazon-echo-dot-2-reviews-dataset
+
+⚙️ Local Configuration Steps:
+Download the dataset from the Kaggle link above.
+
+Create a folder named data/ in the root directory of this project.
+
+Place the downloaded CSV file inside the data/ folder and ensure it is named cleaned_amazon_reviews.csv before running the application.
+
+
  Model Benchmarking & Performance
 During the development phase, a benchmarking pipeline was built to evaluate three algorithms (Multinomial Naive Bayes, Logistic Regression, and Linear Support Vector Machine). The Multinomial Naive Bayes delivered the most robust boundary separation and was selected for production inference.
 
